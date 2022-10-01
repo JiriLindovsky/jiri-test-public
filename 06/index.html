@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="cs" ng-app="nameCalculator">
+<head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <title>Lecture 06</title>
+   
+    
+</head>
+<body>
+    <h1>Lesson 06</h1>
+   
+    <div ng-controller="nameCalculatorController">
+   Type name string:<input type="text" ng-model="name" ng-keyup="displayCalculatedValue();"><br>
+      The calculated value is:  {{value}} <br>
+     
+
+    </div>
+</body>
+</html>
