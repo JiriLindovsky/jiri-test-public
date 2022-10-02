@@ -18,7 +18,20 @@
             <br>
             <img ng-src="images/bla_{{stateOfBeing}}.jpg">
         </div>
-   
+        <span ng-bind="name"></span>
+        <div [style.color]="'blue'">
+          A<input type="number" ng-model="operand1"><br>
+          B<input type="number" ng-model="operand2"><br>
+          op<input type="text" ng-model="operation"><br>
+         
+          Result: {{expr()}}
+          Dalsi:<span ng-bind="cos(expr()+operand1+cos(operand1))"></span>
+          plus:{{operand1+operand2}}
+          minus:{{operand1-operand2}}
+        </div>
+   <!--https://github.com/gothinkster/angular-realworld-example-app-->
+   <!--https://www.telerik.com/blogs/angular-basics-manipulating-css-custom-properties-style-binding-->
+   <!--https://stackblitz.com/edit/angular-ivy-qfby1f?embed=1&file=src/app/app.component.ts-->
       
      
 

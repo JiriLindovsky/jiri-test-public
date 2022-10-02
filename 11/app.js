@@ -15,6 +15,11 @@
             else
                 $scope.stateOfBeing = "hungry";
         };
+        $scope.operation = "+";
+        $scope.operand1 = 1;
+        $scope.operand2 = 2;
+        $scope.expr = function () { return eval($scope.operand1 + $scope.operation + $scope.operand2); };
+        $scope.cos = function (x) { return Math.cos(x); };
     }
     ;
 })();
