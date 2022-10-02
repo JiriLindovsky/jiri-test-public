@@ -18,6 +18,6 @@ declare var angular: any;
        }
       
        console.log($injector.annotate(DIController));
-    });
+    };
        
 })();
