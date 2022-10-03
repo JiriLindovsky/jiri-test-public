@@ -1,0 +1,396 @@
+﻿ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Segoe UI";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:5.0pt;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;}
+h1
+	{mso-style-link:"Nadpis 1 Char";
+	margin-top:5.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	background:#5B9BD5;
+	border:none;
+	padding:0cm;
+	font-size:22.0pt;
+	font-family:"Calibri",sans-serif;
+	color:white;
+	text-transform:uppercase;
+	letter-spacing:.75pt;
+	font-weight:normal;}
+h2
+	{mso-style-link:"Nadpis 2 Char";
+	margin-top:5.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	background:#DEEAF6;
+	border:none;
+	padding:0cm;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;
+	text-transform:uppercase;
+	letter-spacing:.75pt;
+	font-weight:normal;}
+h3
+	{mso-style-link:"Nadpis 3 Char";
+	margin-top:15.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	border:none;
+	padding:0cm;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#1F4D78;
+	text-transform:uppercase;
+	letter-spacing:.75pt;
+	font-weight:normal;}
+h4
+	{mso-style-link:"Nadpis 4 Char";
+	margin-top:10.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	border:none;
+	padding:0cm;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#2E74B5;
+	text-transform:uppercase;
+	letter-spacing:.5pt;
+	font-weight:normal;}
+h5
+	{mso-style-link:"Nadpis 5 Char";
+	margin-top:10.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	border:none;
+	padding:0cm;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#2E74B5;
+	text-transform:uppercase;
+	letter-spacing:.5pt;
+	font-weight:normal;}
+h6
+	{mso-style-link:"Nadpis 6 Char";
+	margin-top:10.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	border:none;
+	padding:0cm;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#2E74B5;
+	text-transform:uppercase;
+	letter-spacing:.5pt;
+	font-weight:normal;}
+p { font-family:"Calibri",sans-serif;
+
+	}
+	
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{mso-style-link:"Nadpis 7 Char";
+	margin-top:10.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#2E74B5;
+	text-transform:uppercase;
+	letter-spacing:.5pt;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{mso-style-link:"Nadpis 8 Char";
+	margin-top:10.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:9.0pt;
+	font-family:"Calibri",sans-serif;
+	text-transform:uppercase;
+	letter-spacing:.5pt;}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{mso-style-link:"Nadpis 9 Char";
+	margin-top:10.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:9.0pt;
+	font-family:"Calibri",sans-serif;
+	text-transform:uppercase;
+	letter-spacing:.5pt;
+	font-style:italic;}
+p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
+	{mso-style-link:"Text komentáře Char";
+	margin-top:5.0pt;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{margin-top:5.0pt;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:8.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#2E74B5;
+	font-weight:bold;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Název Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:26.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#5B9BD5;
+	text-transform:uppercase;
+	letter-spacing:.5pt;}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{mso-style-link:"Podtitul Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:25.0pt;
+	margin-left:0cm;
+	font-size:10.5pt;
+	font-family:"Calibri",sans-serif;
+	color:#595959;
+	text-transform:uppercase;
+	letter-spacing:.5pt;}
+em
+	{color:#1F4D78;
+	text-transform:uppercase;
+	letter-spacing:.25pt;
+	font-style:normal;}
+p.MsoCommentSubject, li.MsoCommentSubject, div.MsoCommentSubject
+	{mso-style-link:"Předmět komentáře Char";
+	margin-top:5.0pt;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;
+	font-weight:bold;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Text bubliny Char";
+	margin-top:5.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	font-size:9.0pt;
+	font-family:"Segoe UI",sans-serif;}
+p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+	{margin-top:5.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoQuote, li.MsoQuote, div.MsoQuote
+	{mso-style-link:"Citát Char";
+	margin-top:5.0pt;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	font-style:italic;}
+p.MsoIntenseQuote, li.MsoIntenseQuote, div.MsoIntenseQuote
+	{mso-style-link:"Výrazný citát Char";
+	margin-top:12.0pt;
+	margin-right:54.0pt;
+	margin-bottom:12.0pt;
+	margin-left:54.0pt;
+	text-align:center;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#5B9BD5;}
+span.MsoSubtleEmphasis
+	{color:#1F4D78;
+	font-style:italic;}
+span.MsoIntenseEmphasis
+	{color:#1F4D78;
+	text-transform:uppercase;
+	letter-spacing:.5pt;
+	font-weight:bold;}
+span.MsoSubtleReference
+	{color:#5B9BD5;
+	font-weight:bold;}
+span.MsoIntenseReference
+	{color:#5B9BD5;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-style:italic;}
+span.MsoBookTitle
+	{letter-spacing:0pt;
+	font-weight:bold;
+	font-style:italic;}
+p.MsoTocHeading, li.MsoTocHeading, div.MsoTocHeading
+	{margin-top:5.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	background:#5B9BD5;
+	border:none;
+	padding:0cm;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	color:white;
+	text-transform:uppercase;
+	letter-spacing:.75pt;}
+span.TextkomenteChar
+	{mso-style-name:"Text komentáře Char";
+	mso-style-link:"Text komentáře";}
+span.PedmtkomenteChar
+	{mso-style-name:"Předmět komentáře Char";
+	mso-style-link:"Předmět komentáře";
+	font-weight:bold;}
+span.TextbublinyChar
+	{mso-style-name:"Text bubliny Char";
+	mso-style-link:"Text bubliny";
+	font-family:"Segoe UI",sans-serif;}
+span.Nadpis2Char
+	{mso-style-name:"Nadpis 2 Char";
+	mso-style-link:"Nadpis 2";
+	text-transform:uppercase;
+	letter-spacing:.75pt;
+	background:#DEEAF6;}
+span.Nadpis1Char
+	{mso-style-name:"Nadpis 1 Char";
+	mso-style-link:"Nadpis 1";
+	color:white;
+	text-transform:uppercase;
+	letter-spacing:.75pt;
+	background:#5B9BD5;}
+span.Nadpis3Char
+	{mso-style-name:"Nadpis 3 Char";
+	mso-style-link:"Nadpis 3";
+	color:#1F4D78;
+	text-transform:uppercase;
+	letter-spacing:.75pt;}
+span.Nadpis4Char
+	{mso-style-name:"Nadpis 4 Char";
+	mso-style-link:"Nadpis 4";
+	color:#2E74B5;
+	text-transform:uppercase;
+	letter-spacing:.5pt;}
+span.Nadpis5Char
+	{mso-style-name:"Nadpis 5 Char";
+	mso-style-link:"Nadpis 5";
+	color:#2E74B5;
+	text-transform:uppercase;
+	letter-spacing:.5pt;}
+span.Nadpis6Char
+	{mso-style-name:"Nadpis 6 Char";
+	mso-style-link:"Nadpis 6";
+	color:#2E74B5;
+	text-transform:uppercase;
+	letter-spacing:.5pt;}
+span.Nadpis7Char
+	{mso-style-name:"Nadpis 7 Char";
+	mso-style-link:"Nadpis 7";
+	color:#2E74B5;
+	text-transform:uppercase;
+	letter-spacing:.5pt;}
+span.Nadpis8Char
+	{mso-style-name:"Nadpis 8 Char";
+	mso-style-link:"Nadpis 8";
+	text-transform:uppercase;
+	letter-spacing:.5pt;}
+span.Nadpis9Char
+	{mso-style-name:"Nadpis 9 Char";
+	mso-style-link:"Nadpis 9";
+	text-transform:uppercase;
+	letter-spacing:.5pt;
+	font-style:italic;}
+span.NzevChar
+	{mso-style-name:"Název Char";
+	mso-style-link:Název;
+	font-family:"Calibri Light",sans-serif;
+	color:#5B9BD5;
+	text-transform:uppercase;
+	letter-spacing:.5pt;}
+span.PodtitulChar
+	{mso-style-name:"Podtitul Char";
+	mso-style-link:Podtitul;
+	color:#595959;
+	text-transform:uppercase;
+	letter-spacing:.5pt;}
+span.CittChar
+	{mso-style-name:"Citát Char";
+	mso-style-link:Citát;
+	font-style:italic;}
+span.VrazncittChar
+	{mso-style-name:"Výrazný citát Char";
+	mso-style-link:"Výrazný citát";
+	color:#5B9BD5;}
+.MsoChpDefault
+	{font-size:10.0pt;
+	font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-top:5.0pt;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 70.85pt 70.85pt 70.85pt;}
+div.WordSection1
+	{page:WordSection1;}
+input[type=radio   ]:not(old){
+  width   : 28px;
+  margin  : 0;
+  padding : 0;
+  opacity : 10;
+}
+label {
+color: white;
+/*font-weight: bold;
+<!--display: block;
+width: 150px;
+float: left;*/
+}

@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="../angular.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body ng-app="quiz" >
+<div ng-controller="QuizController">
+    <h1>&nbsp;&nbsp;Kvíz</h1>
+
+    <form id="myForm"  ng-submit="submitForm()">
+        <div><span ng-model="entity.name"><p>{{entity.name}}</p></span>
+        <div><span ng-model="entity.source"><p>{{entity.source}}</p></span>
+
+</div> 
+        <div ng-repeat="field in entity.fields">
+             
+                <div style="border:solid #5B9BD5 3.0pt;padding:0cm 0cm 0cm 0cm;background:#5B9BD5">
+                    <h2>{{field.question}}</h2>
+
+                    <div><fieldset>
+
+                        <div class="line" ng-repeat="option in field.options">
+                            <label>
+                                <input type="radio" data-ng-model="field.data"   id="{{option.name}}" value="{{option.id}}" /><label for="{{option.name}}">{{option.name}}</label>
+                                <span ng-show="showAsRightAnswer(field, option)" ng-style="getStyle(field, option)">SPRÁVNÁ ODPOVĚĎ</span>
+                                
+                            </label>
+                        </div>
+                        </fieldset>
+                    </div>
+                </div>
+
+
+        </div>
+        Průběžný výsledek:<span ng-model="getProcenta()">{{getProcenta(0)}}</span>
+        <button type="submit" size="2">Ohodnoť</button>
+    </form>
+</div>
+
+</body>
+
+</html>
