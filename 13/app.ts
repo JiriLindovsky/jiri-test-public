@@ -6,7 +6,8 @@ declare var angular: any;
 
     angular.module('App13',[])
     .controller('Controller13',Controller)
-    .filter("loves",lovesFilterFactory);
+    .filter("loves",lovesFilterFactory)
+    .filter('truth', TruthFilterFactory);
     function lovesFilterFactory()
     {
         return function(input) {
@@ -16,15 +17,25 @@ declare var angular: any;
 
         };
     }
+    function TruthFilterFactory()
+    {
+        return function (input, target, replace){
+            input=input || "";
+            input=input.replace(target, replace);
+            return input;
+        }
+
+    }
     Controller.$inject=['$scope','lovesFilter'];
     function Controller($scope,lovesFilter){
       
-        $scope.original="Yakkov likes cookies";
+        $scope.original="Yakkov likes healthy cookies";
 
     
         $scope.sayLovesMessage=function()
         {
-            let message="Yakkov likes to eat snacks."
+            //let message="Yakkov likes to eat snacks."
+            let message=$scope.original;
             message=lovesFilter(message);
             return message;
         }

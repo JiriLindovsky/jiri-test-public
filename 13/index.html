@@ -14,8 +14,9 @@
     <div ng-controller="Controller13">
   {{original}}<br>
   {{sayLovesMessage()}} <br>
-  {{"He likes her" | loves}}    
-     
+  <!--{{"He likes her" | loves}}    -->
+  {{ sayLovesMessage() | truth : 'healthy' : 'unhealhy' }} <br>
+  {{ sayLovesMessage() | truth : 'healthy' : 'unhealhy' | uppercase}}   
 
     </div>
 </body>
