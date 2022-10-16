@@ -10,7 +10,9 @@ declare var angular: any;
 
    
     Controller.$inject=['$scope'];
+    //$scope.name=""; tady nelze
     function Controller($scope){
+        // me: inicializace scope properties
         $scope.onceCounter=0;
         $scope.counter=0;
         $scope.name="Yakkov";
@@ -25,12 +27,14 @@ declare var angular: any;
         $scope.upCounter=function ()
         {
             $scope.counter++;
+            $scope.name="Pavla";
         }
         // sledovani digest loops
         $scope.$watch(function () {
             console.log("Digest loop fired!");
             
         })
+        //$scope.name="jiri"; probehne jakoby "jednou" inicializace je jedna, nesmyslne delat matouci
         /*
         // manually setting up watcher
         $scope.$watch('onceCounter', function (newValue,oldValue){
