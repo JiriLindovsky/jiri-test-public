@@ -13,6 +13,7 @@ declare var angular: any;
     function Controller($scope){
         $scope.onceCounter=0;
         $scope.counter=0;
+        $scope.name="Yakkov";
         $scope.showNumberOfWatchers=function(){
 
             //console.log($scope);
@@ -25,6 +26,12 @@ declare var angular: any;
         {
             $scope.counter++;
         }
+        // sledovani digest loops
+        $scope.$watch(function () {
+            console.log("Digest loop fired!");
+            
+        })
+        /*
         // manually setting up watcher
         $scope.$watch('onceCounter', function (newValue,oldValue){
             console.log("stara hodnota onceCounter:", oldValue);
@@ -35,6 +42,7 @@ declare var angular: any;
             console.log("stara hodnota counteru:", oldValue);
             console.log("nova hodnota counteru:", newValue);
         })
+        */
         
     
       
